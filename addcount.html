@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adicionar Conta</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+	<meta charset="utf-8"/>
+
+</head>
+<body>
+	<div class="principalac">
+	<h1>ADICIONAR CONTA</h1>
+
+	<form action = "addCount.php" method="post">
+		<input type="text" name="fornecedor" size="40px" placeholder="Fornecedor">
+		<br>
+		<br>
+		Data de Emissão &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Data de Vencimento<br>
+		<input type="date" name="emissao" placeholder="Data de Emissão">
+		<input type="date" name="vencimento" placeholder="Data de Vencimento"><br>
+		<br>
+		<input type="text" name="valor" placeholder="valor exemplo: 290.69" size="40px"><br>
+
+		<div class="botoes">
+		<input type="submit" name="sub" value="Salvar">
+		<input type="button" name="volt" value="Voltar" onclick="voltar()">
+
+	</div>
+
+
+	</div>
+	</form>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

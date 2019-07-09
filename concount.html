@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Consultar Contas</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<div class="consulta">
+		<h1>Consultar Contas</h1>
+
+		
+		<h2>Metodo de pesquisa</h2>
+			Todas as Contas
+			<input type="radio" name="variavel" onclick="altVariavel('total')"><br>
+			Fornecedor
+			<input type="radio" name="variavel" id="forn" onclick="altVariavel('fornecedor')"><br>
+			Intervalo de Data (emissão)
+			<input type="radio" name="variavel" id="date" onclick ="altVariavel('interData')"><br>
+			Contas Vencidas
+			<input type="radio" name="variavel" onclick = "altVariavel('vencimento')"><br>
+			<input type="text" name="fornecedor" id="hforn" placeholder="Fornecedor">
+			<l id="hdatat">Data 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data 2</l>
+			<div class="dataEmi">
+				<input type="date" name="emissao" id="hdata1">
+			</div>
+			<div class="dataVenc">
+				<input type="date" name="vencimento" id="hdata2">
+			</div>
+			<br>
+			<input type="button" name="Pesquisar" value="Consultar" onclick="ajax()">
+			<input type="button" name="volt" value="Voltar" onclick="voltar()">
+			<br>
+		<script type="text/javascript">
+			
+			window.onload = function(){
+				var hdatt = document.getElementById("hdatat");
+				var hdat1 = document.getElementById("hdata1");
+				var hdat2 = document.getElementById("hdata2");
+				var hdiv = document.getElementById("hforn");
+				hdiv.style.display = 'none';
+				hdatt.style.display = 'none';
+				hdat1.style.display = 'none';
+				hdat2.style.display = 'none';
+
+
+		}
+
+
+
+		</script>
+	</div>
+			<div id="dados"> </div>
+</body>
+
+</html>

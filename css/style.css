@@ -1,0 +1,57 @@
+div.principal{
+	margin-top: 20px;
+	margin-left: 300px;
+	margin-right: 700px;
+	border: 1px solid;
+ 	padding: 5px;
+  	box-shadow: 1px 3px;
+}
+
+div.menubotao{
+	margin-left: 50px;
+}
+
+div.principalac{
+	margin-left: 300px;
+	margin-right: 700px;
+	border: 1px solid;
+ 	padding: 5px;
+  	box-shadow: 1px 3px;
+
+}
+div.botoes{
+	margin-top: 10px;
+	margin-left: 200px;
+
+
+}
+div.deletar{
+	margin-left: 200px;
+}
+div.consulta{
+	margin-left: 300px;
+	margin-right: 600px;
+	border: 1px solid;
+ 	padding: 5px;
+  	box-shadow: 1px 3px;
+
+}
+
+div.rs{
+	margin-left: 300px;
+
+
+}
+div.dados{
+	
+}
+div.semConta{
+	margin-left: 300px;
+	font-size: 20px;
+}
+div.dataVenc{
+	margin-left: 20px;
+}
+div.dataEmi{
+	float: left;
+}
